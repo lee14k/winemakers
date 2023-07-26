@@ -48,16 +48,10 @@ function Navbar() {
           <li>Contact Us</li>
           <li>Events</li>
           <li>
-            <Link href="/thelodge">Coffee</Link>
+            <Link href="/thelodge">Members Area</Link>
           </li>
           <li>
-            <Link href="/sunrisesuite">Food</Link>
-          </li>
-          <li>
-            <Link href="/cottageone">Books</Link>
-          </li>
-          <li>
-            <Link href="/cottagetwo">Store</Link>
+            <Link href="/sunrisesuite">Photo</Link>
           </li>
         </ul>
       )}

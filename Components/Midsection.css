@@ -1,0 +1,9 @@
+.mid {
+    background-color: #d1c9cb;
+    display: flex;
+}
+
+.midtext {
+    display: flex;
+    flex-direction: column;
+}
