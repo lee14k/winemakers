@@ -5,8 +5,8 @@ export default function Headbanner () {
     return (
         <div className="banner">
             <Image
-                src='/whitelogowinemaker.png'
-                width={630}
+                src='/winelogo2.png'
+                width={500}
                 height={500}
             />
             <button>Join us Now</button>

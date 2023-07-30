@@ -51,7 +51,7 @@ function Navbar() {
             <Link href="/thelodge">Members Area</Link>
           </li>
           <li>
-            <Link href="/sunrisesuite">Photo</Link>
+            <Link href="/sunrisesuite">Gallery</Link>
           </li>
         </ul>
       )}
