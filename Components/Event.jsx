@@ -1,6 +1,6 @@
-export default function Event(date, time, header, description, price) {
+export default function Event({date, time, header, description, price}) {
   return (
-    <div>
+    <div className="eventwrapper">
       <ul>
         <li>{date}</li>
         <span>{time}</span>

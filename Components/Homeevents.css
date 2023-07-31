@@ -1,9 +1,10 @@
 .homewrapper {
     background-image: url('/basementbg.png');
-    height:400px;
     background-size:cover;
-    height:100vh;
     background-attachment: fixed;
+    display:flex;
+    color:white;
+    flex-direction: column;
 } 
 
 h1 {
