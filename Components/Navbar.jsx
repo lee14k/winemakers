@@ -1,6 +1,6 @@
 'use client'
 import './Navbar.css';
-import useHandleResize from '../components/useHandleResize'
+import useHandleResize from '../Components/useHandleResize'
 import React, { useState } from 'react';
 import Link from 'next/link';
 

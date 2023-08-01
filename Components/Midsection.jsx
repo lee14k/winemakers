@@ -7,6 +7,11 @@ export default function Midsection() {
       <Image src="/midwinepic.jpeg" height={450} width={600} className="welcomepic" />
       <div className="midtext">
         <h2 className={`${greatVibes.className} welcome`}>Welcome</h2>
+        <Image
+          src="/divider.png"
+          width={200}
+          height={200}
+        />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
           ipsum quia, a necessitatibus eius pariatur tempora, illum at amet nemo
