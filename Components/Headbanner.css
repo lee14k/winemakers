@@ -9,3 +9,19 @@
     align-items: center;
     padding-bottom:50px;
 }
+
+.join {
+    border: solid white;
+    border-radius: 15px;
+    height:350px;
+    width:270px;
+    font-size: 30px;
+    margin-bottom:50px;
+    color:white;
+    background-color:transparent;
+-webkit-box-shadow: 17px 17px 19px 3px rgba(166, 19, 84, 1);
+    -moz-box-shadow: 17px 17px 19px 3px rgba(166, 19, 84, 1);
+    box-shadow: 17px 17px 19px 3px rgba(166, 19, 84, 1);
+    padding:10px;
+}
+

@@ -43,15 +43,15 @@ function Navbar() {
             <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="/about">About</Link>
+            <Link href="/About">About</Link>
           </li>
           <li>Contact Us</li>
           <li>Events</li>
           <li>
-            <Link href="/Membersarea">Members Area</Link>
+            <Link href="/Login"> Login</Link>
           </li>
           <li>
-            <Link href="/Photos">Gallery</Link>
+            <Link href="/Gallery">Gallery</Link>
           </li>
         </ul>
       )}

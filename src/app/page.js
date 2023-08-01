@@ -6,7 +6,7 @@ import Footer from "../../Components/Footer"
 
 export default function Home() {
   return (
-   <div>
+   <div className="pagewrap">
     <Navbar/>
 <Headbanner/>  
 <Midsection/>  

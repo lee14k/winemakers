@@ -5,11 +5,11 @@ export default function Headbanner () {
     return (
         <div className="banner">
             <Image
-                src='/winelogo2.png'
-                width={500}
-                height={500}
+                src='/winelogov3.png'
+                width={600}
+                height={600}
             />
-            <button>Join us Now</button>
+            <button className='join'>Learn More</button>
         </div>
     )
 }
