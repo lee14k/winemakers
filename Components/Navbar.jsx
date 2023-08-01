@@ -1,9 +1,8 @@
-'use client'
-import './Navbar.css';
-import useHandleResize from '../Components/useHandleResize'
-import React, { useState } from 'react';
-import Link from 'next/link';
-
+"use client";
+import "./Navbar.css";
+import useHandleResize from "../Components/useHandleResize";
+import React, { useState } from "react";
+import Link from "next/link";
 
 function Navbar() {
   const [dropdown, setDropdown] = useState(false);
@@ -30,15 +29,18 @@ function Navbar() {
 
   return (
     <div className="navbar">
-      {typeof window !== 'undefined' && isMobile && (
-        <div className={`hamburger-icon ${showMobile && !dropdown ? 'open' : ''}`} onClick={toggleHamburger}>
+      {typeof window !== "undefined" && isMobile && (
+        <div
+          className={`hamburger-icon ${showMobile && !dropdown ? "open" : ""}`}
+          onClick={toggleHamburger}
+        >
           <div className="line" />
           <div className="line" />
           <div className="line" />
         </div>
       )}
       {(showMobile || !isMobile || dropdown) && (
-        <ul className={`nav ${dropdown ? 'open' : ''}`}>
+        <ul className={`nav ${dropdown ? "open" : ""}`}>
           <li>
             <Link href="/">Home</Link>
           </li>
@@ -56,7 +58,7 @@ function Navbar() {
         </ul>
       )}
     </div>
-  )
+  );
 }
 
 export default Navbar;
