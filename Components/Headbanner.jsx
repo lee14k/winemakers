@@ -6,8 +6,8 @@ export default function Headbanner () {
         <div className="banner">
             <Image
                 src='/winelogov3.png'
-                width={600}
-                height={600}
+                width={700}
+                height={700}
             />
             <button className='join'>Learn More</button>
         </div>

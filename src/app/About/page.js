@@ -4,10 +4,10 @@ import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Navbar from '../../../Components/Navbar'
 import Footer from '../../../Components/Footer'
-
+import './about.css'
 const stats = [
-  { label: 'Members', value: '40' },
-  { label: 'Of club history', value: '53 years' }
+  { value: '40 Members' },
+  { value: '53 Years' }
 ]
 
 const team = [
@@ -323,7 +323,7 @@ export default function Example() {
         {/* Blog section */}
         <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">What we've been up to</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">From the blog</h2>
             <p className="mt-2 text-lg leading-8 text-gray-600">
               Vel dolorem qui facilis soluta sint aspernatur totam cumque.
             </p>

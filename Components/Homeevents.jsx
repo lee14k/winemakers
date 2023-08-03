@@ -5,7 +5,7 @@ import data from "../Components/eventdata.json";
 export default function Homeevents() {
   return (
     <div className="homewrapper">
-      <h2>Upcoming Events</h2>
+      <h2 className="upcoming">Upcoming Events</h2>
       {data.map((item, index) => {
         return (
           <Event

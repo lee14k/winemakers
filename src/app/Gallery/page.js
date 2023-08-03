@@ -1,7 +1,10 @@
+import Imagegallery from "../../../Components/Imagegallery";
+import Navbar from "../../../Components/Navbar";
 export default function Gallery () {
   return (
     <div>
-      <h1>Gallery</h1>
+      <Navbar/>
+      <Imagegallery />
     </div>
   )
 }

@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   gap: 20px;
 }
 
@@ -16,7 +15,7 @@
 .welcome {
   font-size: 110px;
   margin-bottom: 0px;
-  margin-left:-40px;
+  margin-left: -40px;
 }
 
 .mid {

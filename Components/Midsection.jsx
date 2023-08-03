@@ -7,7 +7,12 @@ export default function Midsection() {
     
       <div className="midtext">
         <h2 className={`${greatVibes.className} welcome`}>Welcome</h2>
-       
+         <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+          ipsum quia, a necessitatibus eius pariatur tempora, illum at amet nemo
+          quasi quos est recusandae consequatur architecto libero voluptates
+          quod animi.
+        </p>
       </div>
               <Image src="/divider.png" width={200} height={200} />
 
@@ -19,12 +24,7 @@ export default function Midsection() {
       />
               <Image src="/divider.png" width={200} height={200} />
 
-       <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-          ipsum quia, a necessitatibus eius pariatur tempora, illum at amet nemo
-          quasi quos est recusandae consequatur architecto libero voluptates
-          quod animi.
-        </p>
+     
     </div>
   );
 }
