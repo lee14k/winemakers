@@ -7,13 +7,12 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    padding-bottom:120px;
 }
 
 .join {
     border: solid white;
     border-radius: 15px;
-    height:350px;
+    height:150px;
     width:270px;
     font-size: 30px;
     margin-bottom:50px;
