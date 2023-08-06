@@ -1,16 +1,16 @@
 import Headbanner from "../../Components/Headbanner"
 import Homeevents from "../../Components/Homeevents"
-import Midsection from "../../Components/Midsection"
 import Footer from "../../Components/Footer"
 import Navbar from "../../Components/Navbar"
+import Midsex from "../../Components/Midsex" 
 export default function Home() {
   return (
-   <div>
+   <>
     <Navbar/>
 <Headbanner/>  
-<Midsection/>  
+<Midsex/>
 <Homeevents/>
 <Footer/>
-   </div>
+   </>
   )
 }
