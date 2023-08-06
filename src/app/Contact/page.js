@@ -1,6 +1,8 @@
-
+import Navbar from "../../../Components/Navbar"
 export default function Contact() {
   return (
+    <div>
+    <Navbar/>
     <div className="relative bg-white">
       <div className="lg:absolute lg:inset-0 lg:left-1/2">
         <img
@@ -172,6 +174,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   )
 }

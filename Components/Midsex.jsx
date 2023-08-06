@@ -1,6 +1,7 @@
 
 export default function Midsex() {
   return (
+ <div>
  
     <div className="overflow-hidden bg-white py-32">
       <div className="mx-auto max-w-7xl px-6 lg:flex lg:px-8">
@@ -60,5 +61,6 @@ export default function Midsex() {
       </div>
     </div>
 
+      </div>
   )
 }
