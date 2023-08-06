@@ -9,8 +9,9 @@ export default function Home() {
    <>
     <Navbar/>
 <Headbanner/>  
-<Homeevents/>
 <Middsex/>
+
+<Homeevents/>
 <Footer/>
    </>
   )
