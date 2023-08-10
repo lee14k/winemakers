@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react';
-
+import Navbar from '../../../Components/Navbar';
+import Footer from '../../../Components/Footer';
 export default function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -25,6 +26,8 @@ export default function Login() {
   };
 
   return (
+    <div>
+      <Navbar/>
     <form onSubmit={handleLogin}>
       <div>
         <label>Username:</label>
@@ -36,5 +39,7 @@ export default function Login() {
       </div>
       <button type="submit">Login</button>
     </form>
+    <Footer/>
+    </div>
   );
 }
