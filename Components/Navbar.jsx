@@ -57,6 +57,9 @@ function Navbar() {
           <li>
             <Link href="/Gallery">Gallery</Link>
           </li>
+          <li>
+            <Link href="/Store">Store</Link>
+          </li>
         </ul>
       )}
     </div>
