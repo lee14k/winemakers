@@ -1,31 +1,10 @@
-import bcrypt from 'bcrypt';
-import jwt from 'jsonwebtoken';
-import { NextApiRequest, NextApiResponse } from 'next';
-import { pool } from '../../lib/db';
+import { handleLogin } from "@auth0/nextjs-auth0";
 
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-  if (req.method === 'POST') {
-    const { username, password } = req.body;
-
-    const client = await pool.connect();
+export default async function login(req, res) {
     try {
-      const result = await client.query('SELECT * FROM users WHERE username = $1', [username]);
-      const user = result.rows[0];
-
-      if (!user || !bcrypt.compareSync(password, user.password)) {
-        return res.status(401).json({ message: 'Invalid credentials' });
-      }
-
-      const token = jwt.sign({ id: user.id, username: user.username }, process.env.SECRET_KEY);
-
-      res.setHeader('Set-Cookie', `token=${token}; HttpOnly; Path=/`);
-      return res.status(200).json({ message: 'Login successful' });
-    } catch (err) {
-      return res.status(500).json({ message: 'Server error' });
-    } finally {
-      client.release();
+        await handleLogin(req, res);
+    } catch (error) {
+        console.error(error);
+        res.status(error.status || 500).end(error.message);
     }
-  }
-
-  return res.status(404).end();
 }

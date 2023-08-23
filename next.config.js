@@ -1,6 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
-
 module.exports = {
   async rewrites() {
     return {
@@ -9,8 +7,13 @@ module.exports = {
           source: '/api/:path*',
           destination: 'http://localhost:3000/api/:path*',
         },
-      ],
+      ]
     };
   },
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.resolve.fallback.fs = false;
+    }
+    return config;
+  }
 };
-

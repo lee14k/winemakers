@@ -1,45 +1,43 @@
 'use client'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Navbar from '../../../Components/Navbar';
 import Footer from '../../../Components/Footer';
-export default function Login() {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+import { useUser } from '@auth0/nextjs-auth0';
+import { UserProvider } from '@auth0/nextjs-auth0';
 
-  const handleLogin = async (e) => {
-    e.preventDefault();
+function Login() {
+  const [isClient, setIsClient] = useState(false);
+  const user = isClient ? useUser() : {};
 
-    try {
-      const response = await fetch('/api/login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ username, password }),
-      });
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
-      const data = await response.json();
-      console.log(data.message); // You can handle success/failure here
-    } catch (err) {
-      console.error('Error:', err);
-    }
-  };
+  if (user.isLoading) return <div>Loading...</div>;
+  if (user.error) return <div>{user.error.message}</div>;
+
+  if (user.user) {
+    return (
+      <div>
+        
+        <Navbar />
+        Welcome {user.user.name}! <a href="/api/auth/logout">Logout</a>
+        <Footer />
+      </div>
+    );
+  }
 
   return (
     <div>
-      <Navbar/>
-    <form onSubmit={handleLogin}>
+      <Navbar />
       <div>
-        <label>Username:</label>
-        <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
+        <button onClick={() => window.location.href = '/api/auth/login'}>
+          Login with Auth0
+        </button>
       </div>
-      <div>
-        <label>Password:</label>
-        <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-      </div>
-      <button type="submit">Login</button>
-    </form>
-    <Footer/>
+      <Footer />
     </div>
   );
 }
+
+export default Login;
