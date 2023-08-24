@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-          <UserProvider loginUrl="/winemakers/api/auth/login">
+          <UserProvider>
 
       <body className={inter.className}>{children}</body>
       </UserProvider>
