@@ -4,5 +4,5 @@ import Navbar from '../../../Components/Navbar';
 import Footer from '../../../Components/Footer';
 
 export default function Login() {
-  return <a href="/pages/api/auth/login">Login</a>;
+  return <a href="/api/auth/login">Login</a>;
 }
